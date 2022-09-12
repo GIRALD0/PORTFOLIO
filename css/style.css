@@ -1,0 +1,666 @@
+/* ==========================================================================
+   Author's custom styles
+   ========================================================================== */
+:root {
+    --primary-color: #091E26;
+    --secondary-color: #6A95A6;
+    --gray: #171717;
+    --white: #ECF2F3;
+}
+
+body {
+    font-family: 'Inter V Light', sans-serif;
+    background-color: var(--gray);
+}
+
+/*------------------------------------------------------------------*/
+/*   IE10 in Windows 8 and Windows Phone 8 Bug fix
+/*-----------------------------------------------------------------*/
+
+@-ms-viewport {
+    width: device-width;
+}
+
+@-o-viewport {
+    width: device-width;
+}
+
+@viewport {
+    width: device-width;
+}
+
+
+/*Preloader*/
+
+#loading {
+    background-color: var(--gray);
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    z-index: 1;
+    margin-top: 0px;
+    top: 0px;
+    left: 0;
+    z-index: 9999;
+}
+
+#loading-center {
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+#loading-center-absolute {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    height: 50px;
+    width: 50px;
+    margin-top: -25px;
+    margin-left: -25px;
+    -ms-transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+    transform: rotate(45deg);
+    -webkit-animation: loading-center-absolute 1.5s infinite;
+    animation: loading-center-absolute 1.5s infinite;
+
+}
+
+.object {
+    width: 25px;
+    height: 25px;
+    background-color: #FFF;
+    float: left;
+
+}
+
+
+#object_one {
+    -webkit-animation: object_one 1.5s infinite;
+    animation: object_one 1.5s infinite;
+}
+
+#object_two {
+    -webkit-animation: object_two 1.5s infinite;
+    animation: object_two 1.5s infinite;
+}
+
+#object_three {
+    -webkit-animation: object_three 1.5s infinite;
+    animation: object_three 1.5s infinite;
+}
+
+#object_four {
+    -webkit-animation: object_four 1.5s infinite;
+    animation: object_four 1.5s infinite;
+}
+
+
+@-webkit-keyframes loading-center-absolute {
+    100% {
+        -webkit-transform: rotate(-45deg);
+    }
+
+}
+
+@keyframes loading-center-absolute {
+    100% {
+        transform: rotate(-45deg);
+        -webkit-transform: rotate(-45deg);
+    }
+}
+
+
+
+@-webkit-keyframes object_one {
+    25% {
+        -webkit-transform: translate(0, -50px) rotate(-180deg);
+    }
+
+    100% {
+        -webkit-transform: translate(0, 0) rotate(-180deg);
+    }
+
+}
+
+@keyframes object_one {
+    25% {
+        transform: translate(0, -50px) rotate(-180deg);
+        -webkit-transform: translate(0, -50px) rotate(-180deg);
+    }
+
+    100% {
+        transform: translate(0, 0) rotate(-180deg);
+        -webkit-transform: translate(0, 0) rotate(-180deg);
+    }
+}
+
+
+@-webkit-keyframes object_two {
+    25% {
+        -webkit-transform: translate(50px, 0) rotate(-180deg);
+    }
+
+    100% {
+        -webkit-transform: translate(0, 0) rotate(-180deg);
+    }
+}
+
+@keyframes object_two {
+    25% {
+        transform: translate(50px, 0) rotate(-180deg);
+        -webkit-transform: translate(50px, 0) rotate(-180deg);
+    }
+
+    100% {
+        transform: translate(0, 0) rotate(-180deg);
+        -webkit-transform: translate(0, 0) rotate(-180deg);
+    }
+}
+
+@-webkit-keyframes object_three {
+    25% {
+        -webkit-transform: translate(-50px, 0) rotate(-180deg);
+    }
+
+    100% {
+        -webkit-transform: translate(0, 0) rotate(-180deg);
+    }
+}
+
+@keyframes object_three {
+    25% {
+        transform: translate(-50px, 0) rotate(-180deg);
+        -webkit-transform: translate(-50px, 0) rotate(-180deg);
+    }
+
+    100% {
+        transform: translate(0, 0) rotate(-180deg);
+        -webkit-transform: rtranslate(0, 0) rotate(-180deg);
+    }
+}
+
+
+@-webkit-keyframes object_four {
+    25% {
+        -webkit-transform: translate(0, 50px) rotate(-180deg);
+    }
+
+    100% {
+        -webkit-transform: translate(0, 0) rotate(-180deg);
+    }
+}
+
+@keyframes object_four {
+    25% {
+        transform: translate(0, 50px) rotate(-180deg);
+        -webkit-transform: translate(0, 50px) rotate(-180deg);
+    }
+
+    100% {
+        transform: translate(0, 0) rotate(-180deg);
+        -webkit-transform: translate(0, 0) rotate(-180deg);
+    }
+}
+
+/*End off Preloader*/
+
+/*Background*/
+body {
+    background-color: #171717;
+    background-size: 54px 54px;
+    background-position: 0 0, 27px 27px;
+    background-image: radial-gradient(#1A1A1A 2px, transparent 2px), radial-gradient(#1F1F1F 2px, #171717 2px);
+}
+
+/* ==========================================================================
+   Header
+   ========================================================================== */
+
+header {
+    height: auto;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 5%;
+    height: 100px;
+    z-index: 999;
+    transition: .7s;
+}
+
+/*Navbar*/
+.showcase {
+    font-family: "Inter V Light", sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    cursor: pointer;
+    position: absolute;
+    right: 8%;
+    width: 30px;
+    height: 20px;
+    animation: fadeInUp;
+    animation-duration: 3s;
+}
+
+.bars {
+    width: 30px;
+    height: 4px;
+    background: var(--white);
+}
+
+.bars::before,
+.bars::after {
+    content: '';
+    position: absolute;
+    width: 30px;
+    height: 4px;
+    background: var(--white);
+}
+
+.bars::before {
+    margin-top: 12px;
+}
+
+.bars::after {
+    margin-top: 24px;
+}
+
+nav {
+    position: absolute;
+    width: 100%;
+    height: 30px;
+    background: var(--primary-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    right: -200vw;
+    top: 0;
+    z-index: 100;
+}
+
+nav ul {
+    list-style: none;
+}
+
+nav ul li {
+    margin: 50px 0;
+}
+
+nav ul li a {
+    color: var(--white);
+    font-size: 2em;
+    text-decoration: none;
+    font-weight: 500;
+    position: relative;
+    opacity: 0;
+    pointer-events: none;
+}
+
+nav ul li a:after {
+    content: '';
+    width: 100%;
+    position: absolute;
+    height: 3px;
+    border-radius: 5px;
+    background: var(--white);
+    bottom: -10px;
+    left: 0;
+    transform-origin: left;
+    transition: transform .5s ease;
+    transform: scaleX(0);
+}
+
+
+nav ul li a:hover:after {
+    transform: scaleX(1);
+}
+
+nav .close {
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    top: 7%;
+    right: 8%;
+    cursor: pointer;
+    opacity: 0;
+    pointer-events: none;
+}
+
+nav h2 {
+    position: absolute;
+    font-family: 'Inter V ExtraLight', sans-serif;
+    top: 5%;
+    left: 5%;
+    opacity: 0;
+    pointer-events: none;
+    color: var(--white);
+    font-size: 2rem;
+    font-weight: 300;
+    letter-spacing: 0.17rem;
+}
+
+.nav-text {
+    color: var(--white);
+    font-size: 2rem;
+    font-weight: 300;
+    letter-spacing: 0.17rem;
+    font-family: 'Inter V ExtraLight', sans-serif;
+}
+
+nav .close div::before,
+nav .close div::after {
+    content: '';
+    position: absolute;
+    width: 30px;
+    height: 4px;
+    background: var(--white);
+    transition: background .5s ease;
+}
+
+nav .close div::before {
+    transform: rotate(-45deg);
+}
+
+nav .close div::after {
+    transform: rotate(45deg);
+}
+
+nav .close:hover div::before,
+nav .close:hover div::after {
+    background: var(--secondary-color);
+}
+
+/*Icons*/
+svg {
+    cursor: pointer;
+    position: absolute;
+    margin-top: 1%;
+    left: 8%;
+    animation: fadeInUp;
+    animation-duration: 3s;
+}
+
+nav svg {
+    top: 5%;
+    opacity: 0;
+}
+
+/*==========================================================================
+    Principal page
+    ========================================================================== */
+
+/*Showcase*/
+.content-showcase {
+    position: relative;
+    font-family: 'Inter V ExtraLight', sans-serif;
+    transition-duration: 600ms;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    animation: fadeInUp;
+    animation-duration: 3s;
+}
+
+.content-showcase br {
+    display: none;
+}
+
+.content-showcase h1 {
+    font-family: 'Inter V Medium', sans-serif;
+    font-size: 3.5rem;
+    color: var(--white);
+    letter-spacing: 0.5rem;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+.content-showcase h3 {
+    font-weight: 300;
+    font-size: 2rem;
+    color: var(--white);
+    letter-spacing: 0.17rem;
+}
+
+.im {
+    width: 450px;
+}
+
+.content-showcase .iAm {
+    color: var(--secondary-color);
+}
+
+/*
+About me section style
+========================*/
+
+.divider {
+    height: 2px;
+    width: 50px;
+    background-color: var(--white);
+    display: inline-block;
+    margin-bottom: 20px;
+}
+
+.section-header {
+    height: 100px;
+    width: 300px;
+    margin-left: 12.8%;
+    margin-bottom: 20px;
+}
+
+.about-grid {
+    display: grid;
+    gap: 1rem;
+    grid-template-columns: 35% 40%;
+    justify-content: center;
+    align-items: center;
+    margin-left: 1%;
+}
+
+.section-title h2 {
+    font-family: 'Inter V Light', sans-serif;
+    font-size: 2.5rem;
+    color: var(--white);
+    letter-spacing: 0.4rem;
+    margin: 50px 0;
+}
+
+.content-text {
+    font-family: 'Inter V ExtraLight', sans-serif;
+    color: var(--white);
+    font-size: 1.15rem;
+    letter-spacing: 0.07rem;
+    line-height: 2.5rem;
+    margin-bottom: 50px;
+}
+
+.CV {
+    width: 90%;
+    margin: 40px auto;
+    text-align: center;
+}
+
+.custom-btn {
+    width: 130px;
+    height: 40px;
+    color: #fff;
+    border-radius: 5px;
+    padding: 10px 25px;
+    font-family: 'Lato', sans-serif;
+    font-weight: 500;
+    background: transparent;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    position: relative;
+    display: inline-block;
+    outline: none;
+}
+
+.btn-3 {
+    background: var(--primary-color);
+    width: 130px;
+    height: 40px;
+    line-height: 42px;
+    padding: 0;
+    border: none;
+
+}
+
+.btn-3 span {
+    position: relative;
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+.btn-3:before,
+.btn-3:after {
+    position: absolute;
+    content: "";
+    right: 0;
+    top: 0;
+    background: var(--secondary-color);
+    transition: all 0.3s ease;
+}
+
+.btn-3:before {
+    height: 0%;
+    width: 2px;
+}
+
+.btn-3:after {
+    width: 0%;
+    height: 2px;
+}
+
+.btn-3:hover {
+    background: transparent;
+    box-shadow: none;
+}
+
+.btn-3:hover:before {
+    height: 100%;
+}
+
+.btn-3:hover:after {
+    width: 100%;
+}
+
+.btn-3 span:hover {
+    color: var(--secondary-color);
+}
+
+.btn-3 span:before,
+.btn-3 span:after {
+    position: absolute;
+    content: "";
+    left: 0;
+    bottom: 0;
+    background: var(--secondary-color);
+    transition: all 0.3s ease;
+}
+
+.btn-3 span:before {
+    width: 2px;
+    height: 0%;
+}
+
+.btn-3 span:after {
+    width: 0%;
+    height: 2px;
+}
+
+.btn-3 span:hover:before {
+    height: 100%;
+}
+
+.btn-3 span:hover:after {
+    width: 100%;
+}
+
+
+/*==========================
+    Skills section
+    ==========================*/
+
+.skills-title h3 {
+    font-family: 'Inter V Light', sans-serif;
+    font-size: 2rem;
+    letter-spacing: 0.2rem;
+    color: var(--white);
+    margin-left: 12.8%;
+    margin-top: 60px;
+    margin-bottom: 75px;
+}
+
+.skills-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    margin-bottom: 200px;
+}
+
+.skills-grid {
+    display: grid;
+    grid-template-rows: 1fr;
+    grid-template-columns: repeat(7, 1fr);
+    gap: 3.5rem;
+}
+
+.skill-title {
+    font-family: 'Inter V ExtraLight', sans-serif;
+    font-size: 0.8rem;
+    color: var(--white);
+    letter-spacing: 0.1rem;
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: center;
+    margin-top: 0.8rem;
+}
+
+.skills-grid .logo {
+    width: 60px;
+    height: 60px;
+    margin: 0 auto;
+    transition: .3s;
+}
+
+.skills-grid .logo:hover {
+    transform: scale(1.1);
+}
+
+/*==========================
+    Projects section
+    ==========================*/
+
+.projects-container {
+    margin-bottom: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}    
+
+.projects-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.project-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

@@ -1,0 +1,413 @@
+<!DOCTYPE html>
+
+<!--[if gt IE 8]><!-->
+<html class="no-js" lang="en">
+<!--<![endif]-->
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="Mateo Giraldo, mateo giraldo, girald0, GIRALD0" />
+    <meta name="description" content="Desarrollador web full stack girald0" />
+    <meta name="author" content="Mateo Giraldo" />
+
+    <!-- FONTS-->
+
+    <!-- CSS-->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/animate.css">
+    <link rel="stylesheet" href="css/responsive.css">
+
+
+    <title>girald0</title>
+    <link rel="icon" type="image/png" href="assets/Logo.svg">
+
+</head>
+
+<body>
+
+    <!-- Preloader -->
+    <div id="loading">
+        <div id="loading-center">
+            <div id="loading-center-absolute">
+                <div class="object" id="object_one"></div>
+                <div class="object" id="object_two"></div>
+                <div class="object" id="object_three"></div>
+                <div class="object" id="object_four"></div>
+            </div>
+        </div>
+    </div>
+    <!--End of Preloader -->
+
+    <!-- Nav-->
+    <header id="header">
+
+        <div class="icon">
+            <a href="index.html">
+                <!-- Generator: Adobe Illustrator 24.0.0, SVG Export Plug-In  -->
+                <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px"
+                    y="0px" width="34.3px" height="65.7px" viewBox="0 0 34.3 65.7"
+                    style="enable-background:new 0 0 34.3 65.7;" xml:space="preserve">
+                    <style type="text/css">
+                        .st0 {
+                            fill: #6A95A6;
+                        }
+
+                        .st1 {
+                            fill: #ECF2F3;
+                        }
+                    </style>
+                    <defs>
+                    </defs>
+                    <g>
+                        <polygon class="st0"
+                            points="34.3,49.5 34.3,59.4 31.7,65.7 29.3,65.7 30.9,59.4 28.6,59.4 28.6,49.5 	" />
+                        <rect x="28.6" y="34" class="st0" width="5.7" height="5.7" />
+                        <path class="st1"
+                            d="M20.5,6.1c-0.6-1.4-1.3-2.6-2.3-3.5c-0.9-0.9-2-1.6-3.1-2S12.7,0,11.6,0H9.7C8.6,0,7.4,0.2,6.2,0.6
+		S4,1.7,3.1,2.6S1.4,4.7,0.9,6.1C0.3,7.5,0,9.2,0,11.2v37.7c0,2,0.3,3.7,0.9,5.1c0.6,1.4,1.3,2.6,2.2,3.5c0.9,0.9,2,1.6,3.1,2
+		s2.4,0.6,3.5,0.6h1c1.1,0,2.2-0.3,3.5-0.9c1.2-0.6,2.4-1.5,3.5-2.6l0.7,2.8h3V39.3h-5.7V48c0,2.6-0.5,4.5-1.4,5.6
+		c-0.9,1.1-2,1.7-3.1,1.7h-0.9c-1.2,0-2.2-0.6-3.1-1.7c-0.9-1.1-1.4-3-1.4-5.6v-36c0-2.6,0.5-4.5,1.4-5.6c0.9-1.1,2-1.7,3.1-1.7h0.9
+		c1.1,0,2.2,0.6,3.1,1.7c0.9,1.1,1.4,3,1.4,5.6v9.6h5.7V11.2C21.3,9.2,21,7.5,20.5,6.1z M10.8,33.7h4.8v0h5.7v-4.8H10.8V33.7z" />
+                    </g>
+                </svg>
+
+            </a>
+        </div>
+
+        <div class="container">
+            <div class="bars"></div>
+        </div>
+
+        <nav>
+            <!-- Generator: Adobe Illustrator 24.0.0, SVG Export Plug-In  -->
+            <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px"
+                y="0px" width="34.3px" height="65.7px" viewBox="0 0 34.3 65.7"
+                style="enable-background:new 0 0 34.3 65.7;" xml:space="preserve">
+                <style type="text/css">
+                    .st0 {
+                        fill: #6A95A6;
+                    }
+
+                    .st1 {
+                        fill: #ECF2F3;
+                    }
+                </style>
+                <defs>
+                </defs>
+                <g>
+                    <polygon class="st0"
+                        points="34.3,49.5 34.3,59.4 31.7,65.7 29.3,65.7 30.9,59.4 28.6,59.4 28.6,49.5 	" />
+                    <rect x="28.6" y="34" class="st0" width="5.7" height="5.7" />
+                    <path class="st1"
+                        d="M20.5,6.1c-0.6-1.4-1.3-2.6-2.3-3.5c-0.9-0.9-2-1.6-3.1-2S12.7,0,11.6,0H9.7C8.6,0,7.4,0.2,6.2,0.6
+            S4,1.7,3.1,2.6S1.4,4.7,0.9,6.1C0.3,7.5,0,9.2,0,11.2v37.7c0,2,0.3,3.7,0.9,5.1c0.6,1.4,1.3,2.6,2.2,3.5c0.9,0.9,2,1.6,3.1,2
+            s2.4,0.6,3.5,0.6h1c1.1,0,2.2-0.3,3.5-0.9c1.2-0.6,2.4-1.5,3.5-2.6l0.7,2.8h3V39.3h-5.7V48c0,2.6-0.5,4.5-1.4,5.6
+            c-0.9,1.1-2,1.7-3.1,1.7h-0.9c-1.2,0-2.2-0.6-3.1-1.7c-0.9-1.1-1.4-3-1.4-5.6v-36c0-2.6,0.5-4.5,1.4-5.6c0.9-1.1,2-1.7,3.1-1.7h0.9
+            c1.1,0,2.2,0.6,3.1,1.7c0.9,1.1,1.4,3,1.4,5.6v9.6h5.7V11.2C21.3,9.2,21,7.5,20.5,6.1z M10.8,33.7h4.8v0h5.7v-4.8H10.8V33.7z" />
+                </g>
+            </svg>
+            <div class="close">
+                <div></div>
+            </div>
+            <ul>
+                <li><a class="nav-text" href="">Home</a></li>
+                <li><a class="nav-text1" href="#about">About</a></li>
+                <li><a class="nav-text2" href="#projects">Projects</a></li>
+                <li><a class="nav-text3" href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+
+    </header>
+    <!-- End of Nav-->
+
+    <!-- Principal page-->
+    <section class="showcase">
+
+        <div class="content-showcase">
+
+            <div class="im">
+                <h3>Hi, i am</h3>
+            </div>
+            <h1>Mateo <br> Giraldo</h1>
+
+            <div class="im">
+                <h3 class="cadena">
+                    <span class="typed"></span>
+                </h3>
+            </div>
+
+            <div class="cadena" id="cadenasTexto">
+                <h3>A <b class="iAm">Front-End Developer</b></h3>
+                <h3>A <b class="iAm">UX - UI Designer</b></h3>
+                <h3>A <b class="iAm">Comunity Manager</b></h3>
+            </div>
+
+        </div>
+    </section>
+    <!-- End of Principal page-->
+
+
+    <!-- About-->
+    <section class="about" id="about">
+
+        <div class="section-header">
+            <div class="divider"></div>
+
+            <div class="section-title">
+                <h2>About me</h2>
+            </div>
+        </div>
+
+        <div class="about-grid">
+            <div class="about-content">
+
+                <div class="content-text">
+                    <p>I am a Front-End Developer, UX - UI Designer and Comunity Manager. I am passionate about
+                        technology
+                        and I am always looking for new challenges I could learn from.</p>
+                </div>
+
+                <div class="">
+                    <button class="custom-btn btn-3"><span>Dowload CV</span></button>
+                </div>
+            </div>
+
+            <div class="about-img">
+                <img src="assets/about.png" alt="">
+
+            </div>
+        </div>
+
+        <div class="skills">
+
+            <div class="skills-title">
+                <h3>Skills</h3>
+            </div>
+
+            <div class="skills-container">
+
+                <div class="skills-grid">
+
+                    <div class="1">
+
+                        <div class="logo">
+                            <img src="assets/skills/html-5.png" alt="">
+                        </div>
+
+                        <div class="skill-title">
+                            <h4>HTML5</h4>
+                        </div>
+
+                    </div>
+
+                    <div class="2">
+
+                        <div class="logo">
+                            <img src="assets/skills/css-3.png" alt="">
+                        </div>
+
+                        <div class="skill-title">
+                            <h4>CSS3</h4>
+                        </div>
+
+                    </div>
+
+                    <div class="3">
+
+                        <div class="logo">
+                            <img src="assets/skills/Bootstrap.png" alt="">
+                        </div>
+
+                        <div class="skill-title">
+                            <h4>Bootstrap</h4>
+                        </div>
+
+                    </div>
+
+                    <div class="4">
+
+                        <div class="logo">
+                            <img src="assets/skills/js.png" alt="">
+                        </div>
+
+                        <div class="skill-title">
+                            <h4>JS</h4>
+                        </div>
+
+                    </div>
+
+                    <div class="5">
+
+                        <div class="logo">
+                            <img src="assets/skills/react.png" alt="">
+                        </div>
+
+                        <div class="skill-title">
+                            <h4>React</h4>
+                        </div>
+
+                    </div>
+
+                    <div class="6">
+
+                        <div class="logo">
+                            <img src="assets/skills/mysql.png" alt="">
+                        </div>
+
+                        <div class="skill-title">
+                            <h4>MySQL</h4>
+                        </div>
+
+                    </div>
+
+                    <div class="7">
+
+                        <div class="logo">
+                            <img src="assets/skills/git.png" alt="">
+                        </div>
+
+                        <div class="skill-title">
+                            <h4>Git</h4>
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+    </section>
+    <!-- End of About-->
+
+    <!-- Projects-->
+    <section class="projects" id="projects">
+
+        <div class="section-header">
+            <div class="divider"></div>
+
+            <div class="section-title">
+                <h2>Projects</h2>
+            </div>
+        </div>
+
+        <div class="projects-container">
+
+            <div class="projects-grid">
+
+                <div class="project">
+                    <div class="project-img">
+                        <img src="assets/projects/1.png" alt="">
+                    </div>
+
+                    <div class="project-content">
+                        <div class="project-title">
+                            <h3>Project 1</h3>
+                        </div>
+
+                        <div class="project-text">
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quae.</p>
+                        </div>
+
+                        <div class="project-btn">
+                            <button class="custom-btn btn-3"><span>View</span></button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project">
+                    <div class="project-img">
+                        <img src="assets/projects/2.png" alt="">
+                    </div>
+
+                    <div class="project-content">
+                        <div class="project-title">
+                            <h3>Project 2</h3>
+                        </div>
+
+                        <div class="project-text">
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quae.</p>
+                        </div>
+
+                        <div class="project-btn">
+                            <button class="custom-btn btn-3"><span>View</span></button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project">
+                    <div class="project-img">
+                        <img src="assets/projects/3.png" alt="">
+                    </div>
+
+                    <div class="project-content">
+                        <div class="project-title">
+                            <h3>Project 3</h3>
+                        </div>
+
+                        <div class="project-text">
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quae.</p>
+                        </div>
+
+                        <div class="project-btn">
+                            <button class="custom-btn btn-3"><span>View</span></button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project">
+                    <div class="project-img">
+                        <img src="assets/projects/4.png" alt="">
+                    </div>
+
+                    <div class="project-content">
+                        <div class="project-title">
+                            <h3>Project 4</h3>
+                        </div>
+
+                        <div class="project-text">
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quae.</p>
+                        </div>
+
+                        <div class="project-btn">
+                            <button class="custom-btn btn-3"><span>View</span></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </section>
+    <!-- End of Projects-->
+
+    <!-- Contact-->
+    <section class="contact" id="contact">
+
+        <div class="section-header">
+            <div class="divider"></div>
+
+            <div class="section-title">
+                <h2>Contact</h2>
+            </div>
+        </div>
+
+    </section>
+    <!-- End of Contact-->
+
+    <footer>
+
+    </footer>
+
+
+    <!-- JS -->
+    <script src="js/jquery-1.11.2.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+    <script src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/16327/gsap-latest-beta.min.js"></script>
+    <script src="js/main.js"></script>
+
+</body>
+
+</html>
