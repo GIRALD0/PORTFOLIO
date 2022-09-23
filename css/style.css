@@ -253,6 +253,7 @@ body {
     border-radius: 0px;
     background-color: var(--primary-color);
 }
+/* end of scroll bar */
 
 /*Background*/
 body {
@@ -261,6 +262,7 @@ body {
     background-position: 0 0, 27px 27px;
     background-image: radial-gradient(#1A1A1A 2px, transparent 2px), radial-gradient(#1F1F1F 2px, #171717 2px);
 }
+/*End of Background*/
 
 /* ==========================================================================
    Header
@@ -449,6 +451,18 @@ nav svg {
     opacity: 0;
 }
 
+.hidden {
+    opacity: 0;
+    pointer-events: none;
+    transition: .8s;
+}
+
+.visible {
+    opacity: 1;
+    pointer-events: all;
+    transition: 3s;
+}
+
 /*==========================================================================
     Principal page
     ========================================================================== */
@@ -528,7 +542,7 @@ About me section style
     font-size: 2.5rem;
     color: var(--white);
     letter-spacing: 0.4rem;
-    margin: 50px 0;
+    margin: 50px 0 0 0;
 }
 
 .content-text {
@@ -539,6 +553,7 @@ About me section style
     line-height: 2.5rem;
     margin-bottom: 50px;
 }
+
 
 .CV {
     width: 90%;
@@ -709,7 +724,7 @@ About me section style
 
 .project-tile {
     text-align: center;
-    height: 180px;
+    height: 215px;
     background-color: var(--primary-color);
     border-radius: 0.5rem;
     margin: 1.5em;
@@ -801,7 +816,7 @@ About me section style
 footer {
     text-align: center;
     margin: 0 auto;
-    padding-bottom: 1em;
+    padding-bottom: 3rem;
 }
 
 footer .heart {

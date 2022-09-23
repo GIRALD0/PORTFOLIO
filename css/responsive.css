@@ -1,20 +1,47 @@
 /* Portrait tablets and medium desktops */
 @media (min-width: 992px) and (max-width: 1199px) {
-    
+    .about-grid {
+        margin-top: 100px;
+    }
+
+    .skills {
+        margin-top: 130px;
+    }
 }
 
 
 /* Portrait tablets and small desktops */
 @media (max-width: 992px) {
+    .about-grid {
+        margin-top: 100px;
+    }
 
+    .skills {
+        margin-top: 130px;
+    }
+
+    .about-grid {
+        grid-template-columns: repeat(auto-fill, minmax(min(100%, 25rem), 1fr));
+    }
+    
+    .about-content {
+        padding: 0 90px;
+    }
+
+    .about-img {
+        width: 80%;
+        height: 80%;
+        margin: auto;
+    }
+
+    .skills-grid {
+        grid-template-columns: repeat(4, 1fr);
+    }
 }
 
 
 /* Landscape phones and portrait tablets */
 @media  (max-width: 768px) {
-    .about-grid {
-        grid-template-columns: repeat(auto-fill, minmax(min(100%, 25rem), 1fr));
-    }
 }
 
 
@@ -24,8 +51,39 @@
         font-size: 2rem;
     }
 
+    .showcase {
+        padding-left: 15px;
+    }
+
     .content-showcase h3 {
-        font-size: 1.5rem;
+        font-size: 1.3rem;
+        padding-left: 80px;    
+    }
+
+    .section-title h2{
+        font-size: 1.8rem;
+    }
+
+    .about-content {
+        margin-top: -30px;
+        padding: 0 45px;
+        font-size: .7rem;
+    }
+
+    .skills-title h3{
+        font-size: 1.8rem;
+    }
+
+    .skills-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .projects-container {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    li span {
+        font-size: 1.3rem;
     }
 }
 
@@ -42,6 +100,16 @@
         display: block;
     }
 
-    nav {
+    .content-showcase h1 {
+        font-size: 1.7rem;
+    }
+
+    .content-showcase h3 {
+        font-size: 1rem;
+        padding-left: 150px;    
+    }
+
+    .section-title h2{
+        font-size: 1.8rem;
     }
 }
