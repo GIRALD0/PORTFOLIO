@@ -405,7 +405,7 @@ nav h2 {
     letter-spacing: 0.17rem;
 }
 
-.nav-text {
+.nav-text, .nav-text1, .nav-text2, .nav-text3 {
     color: var(--white);
     font-size: 2rem;
     font-weight: 300;
