@@ -716,7 +716,7 @@ About me section style
 
 .projects-container {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(1, 1fr);
     margin: 0 12.8%;
     margin-top: 100px;
 
@@ -728,7 +728,7 @@ About me section style
     background-color: var(--primary-color);
     border-radius: 0.5rem;
     margin: 1.5em;
-    transition: all 0.3s ease-in-out;
+    transition: all 0.5s ease-in-out;
 }
 
 .project-tile:hover {
@@ -736,7 +736,6 @@ About me section style
     background-color: var(--white);
     color: var(--gray);
     box-shadow: 0 10px 30px -5px rgba(255, 255, 255, 0.2);
-
 }
 
 .project-tile a {
@@ -755,6 +754,7 @@ About me section style
 
 .extra-info {
     display: none;
+    top: 500px;
 }
 
 .project-tile:hover a {
@@ -778,7 +778,6 @@ About me section style
     display: inline;
     font-style: italic;
 }
-
 /*==========================
     Contact section
     ==========================*/
